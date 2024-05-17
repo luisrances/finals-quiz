@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- navbar -->
+    <header>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a>FOOD STORE</a></li>
+            </ul>
+            <ul class="nav-list">
+                <li><a href="#homepage">HOMEPAGE</a></li>
+                <li><a href="#menu">MENU</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- homepage -->
+    <a name="homepage"></a>
+    <div class="homepage-container">
+        <div class="bg">
+            <h1 class="homepage-title">FOOD STORE</h1>
+        </div>
+    </div>
+    <!-- menu -->
+    <a name="menu"></a>
+    <div class="menu-container">
+        <div class="menu-title">
+            <h2 class="menu-header">MENU</h2>
+        </div>
+        <div class="items" onclick="">
+            <div class="item1 item" >
+                <img src="y1.png" alt="" height="350px" width="300px" onclick="showItem(item1)">
+            </div>
+            <div class="item2 item">
+                <img src="y2.png" alt="" height="350px" width="300px" onclick="showItem(item2)">
+            </div>
+            <div class="item3 item">
+                <img src="y3.png" alt="" height="350px" width="300px" onclick="showItem(item3)">
+            </div>
+            <div class="item4 item">
+                <img src="y4.png" alt="" height="350px" width="300px" onclick="showItem(item4)">
+            </div>
+            <div class="item5 item">
+                <img src="y5.png" alt="" height="350px" width="300px" onclick="showItem(item5)">
+            </div>
+            <div class="item6 item">
+                <img src="y6.png" alt="" height="350px" width="300px" onclick="showItem(item6)">
+            </div>
+            <div class="item7 item">
+                <img src="y7.png" alt="" height="350px" width="300px" onclick="showItem(item7)">
+            </div>
+            <div class="item8 item">
+                <img src="y8.png" alt="" height="350px"width="300px" onclick="showItem(item8)">
+            </div>
+            <div class="item9 item">
+                <img src="y9.png" alt="" height="350px"width="300px" onclick="showItem(item9)">
+            </div>
+            <div class="item10 item">
+                <img src="y10.png" alt="" height="350px"width="300px" onclick="showItem(item10)">
+            </div>
+            <div class="item11 item">
+                <img src="y11.png" alt="" height="350px"width="300px" onclick="showItem(item11)">
+            </div>
+            <div class="item12 item">
+                <img src="y12.png" alt="" height="350px"width="300px" onclick="showItem(item12)">
+            </div>
+        </div>
+    </div>
+    <!-- about -->
+    <a name="about"></a>
+    <!-- contact -->
+    <a name="contact"></a>
+    
+    <!-- The popup container -->
+    <div id="popup-container">
+        <div class="sms">
+            <!-- The popup content will be generated here -->
+            <div class="center">
+                <button id="popup-exit" class="btn" onclick="closeItem()">X</button>
+                <div id="popup-content">
+                    <div class="image-container">
+                        <img id="product_img" src="" alt="Product Image">
+                    </div>
+                    <div class="text-container">
+                        <p id="product_name"></p>
+                        <p id="product_price"></p>
+                    </div>
+                    <!-- <div class="number">
+                                <button class="minus" onclick="minus()">-</button>
+                                <input type="text" value="1" id="txtQuantity" />
+                                <button class="plus" onclick="add()">+</button>
+                            </div> -->
+                    <!-- <p id="lblPrice">price: </p> -->
+                    <div class="button-container">
+                        <button id="btnAddToCart" onclick="addToCart()">Add to cart</button>
+                        <button id="buyNow">Buy now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
